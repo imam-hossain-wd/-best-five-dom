@@ -5,24 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- external css style sheet -->
-    <link rel="stylesheet" href="style.css">
 
+    <style>
+        .player-container{
+            width:70%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+            
+        }
+        .box{
+            height: 400px;
+            width: 300px;
+            background-color:green;
+            margin-bottom:10px;
+            text-align:center;
+            border-radius: 5px;
+
+        }
+
+        button{
+            width:230px;
+            height:45px;
+            font-size:20px;
+            font-weight:bold;
+            border-radius:5px;
+            border:none;
+            background-color: crimson;
+        }
+        img{
+            width:100%;
+            height:200px;
+            border-radius: 5px;
+        }
+        p{
+            font-size:20px;
+        }
+
+        .select{
+            width:300px;
+            height:400px;
+            background-color: tomato;
+            margin-bottom: 20px;
+        }
+        .calculate{
+            width:300px;
+            height:500px;
+            background-color: tomato;
+
+        }
+        /* .calculate-container{
+
+        } */
+
+        .body-container{
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
 </head>
 <body>
-        <!-- header section start -->
-    <header class="header-style">
-        <section>
-            <h1>Best Five Player Ever</h1>
-
-        </section>
-    </header>
-
-    <!-- header section end -->
-
-
-
-    <!-- main section start -->
 
     <main>
         <section class="body-container">
@@ -35,7 +77,7 @@
                         <img src="images/iqbal.jpg" alt="">
                     </div>
                     <div class="text-center">
-                        <h1>Tamim Iqbal</h1>
+                        <h3>Tamim Iqbal</h3>
                         <p>Total Run ODI 15,000 <br>Current Ranking : 40</p>
                         
                         <button> Select</button>
@@ -46,7 +88,7 @@
                         <img src="images/mashrafe.jpg" alt="">
                     </div>
                     <div class="text-center">
-                        <h1>Tamim Iqbal</h1>
+                        <h3>Tamim Iqbal</h3>
                         <p>Total Run ODI 15,000 <br>Current Ranking : 40</p>
                         <button > Select</button>
                     </div>
@@ -56,7 +98,7 @@
                         <img src="images/sakib.jpg" alt="">
                     </div>
                     <div class="text-center">
-                        <h1>Tamim Iqbal</h1>
+                        <h3>Tamim Iqbal</h3>
                         <p>Total Run ODI 15,000 <br>Current Ranking : 40</p>
                         <button > Select</button>
                     </div>
@@ -66,7 +108,7 @@
                         <img src="images/mushfique.jpg" alt="">
                     </div>
                     <div class="text-center">
-                        <h1>Tamim Iqbal</h1>
+                        <h3>Tamim Iqbal</h3>
                         <p>Total Run ODI 15,000 <br>Current Ranking : 40</p>
                         <button > Select</button>
                     </div>
@@ -76,7 +118,7 @@
                         <img src="images/sabbir.jpg" alt="">
                     </div>
                     <div class="text-center">
-                        <h1>Tamim Iqbal</h1>
+                        <h3>Tamim Iqbal</h3>
                         <p>Total Run ODI 15,000 <br>Current Ranking : 40</p>
                         <button > Select</button>
                     </div>
@@ -86,7 +128,7 @@
                         <img src="images/taskin.jpg" alt="">
                     </div>
                     <div class="text-center">
-                        <h1>Tamim Iqbal</h1>
+                        <h3>Tamim Iqbal</h3>
                         <p>Total Run ODI 15,000 <br>Current Ranking : 40</p>
                         <button > Select</button>
                     </div>
@@ -96,7 +138,7 @@
                         <img src="images/mahmudullah.jpg" alt="">
                     </div>
                     <div class="text-center">
-                        <h1>Tamim Iqbal</h1>
+                        <h3>Tamim Iqbal</h3>
                         <p>Total Run ODI 15,000 <br>Current Ranking : 40</p>
                         <button > Select</button>
                     </div>
@@ -106,7 +148,7 @@
                         <img src="images/m.jpg" alt="">
                     </div>
                     <div class="text-center">
-                        <h1>Tamim Iqbal</h1>
+                        <h3>Tamim Iqbal</h3>
                         <p>Total Run ODI 15,000 <br>Current Ranking : 40</p>
                         <button > Select</button>
                     </div>
@@ -116,7 +158,7 @@
                         <img src="images/anamul.jpg" alt="">
                     </div>
                     <div class="text-center">
-                        <h1>Tamim Iqbal</h1>
+                        <h3>Tamim Iqbal</h3>
                         <p>Total Run ODI 15,000 <br>Current Ranking : 40</p>
                         <button > Select</button>
                     </div>
@@ -126,42 +168,14 @@
 
             <div class="calculate-container">
 
-                <div class="select">
-                    <h1>Selected - v</h1>
-                </div>
+                <div class="select"></div>
 
-                <div class="calculate">
-                    <h1 class="budget-header">Budget</h1>
-                    <label for="">Per Player : </label>
-                    <input type="text"> <br>
-                    <button>calculate</button> <br>
-                    <h3>Player Expenses $<span>00</span></h3>  <br>
-                    <label for="">Manager</label>
-                    <input type="text"> <br> <br>
-                    <label for="">Coach</label>
-                    <input type="text"> <br> <br>
-                    <button>Calculate Total</button> <br> <br>
-                    <label>Total</label> <label>$<span>00</span></label>
-                </div>
+                <div class="calculate"></div>
 
             </div>
             
         </section>
     </main>
-
-
-
-
-
-   
-
-    <!-- main section end -->
-
-
-
-
-
-
-    <script src="script.js"></script>
+    
 </body>
 </html>
