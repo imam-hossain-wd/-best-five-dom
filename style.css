@@ -33,7 +33,7 @@
 
 }
 
-.box button{
+button{
     width:230px;
     height:40px;
     font-size:20px;
@@ -76,7 +76,37 @@ h1{
 }
 
 
+.calculate button , h3, label{
+    font-size:20px;
+    margin:15px;
+}
+
+
 .budget-header{
     text-align: center;
-    margin-top:20px;
+    margin-bottom:20px;
+    
+}
+.calculate input{
+    width:120px;
+    height:40px;
+}
+
+
+
+
+
+
+
+
+footer{
+    height:200px;
+    background-color: black;
+    color:crimson;
+    font-style: italic;
+    
+}
+footer p {
+    text-align: center;
+    margin-top: 70px;
 }
