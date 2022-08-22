@@ -15,25 +15,29 @@
 
 
 
-for(let i = 0; i<10;i++){
+// for(let i = 0; i<10;i++){
     
-    const button = document.querySelectorAll('.select-button')[i];
+//     const button = document.querySelectorAll('.select-button')[i];
 
-        button.addEventListener('click',function(){
-            const parent = button.parentNode;
-            const firstChild = parent.firstElementChild;
-            const name = firstChild.innerHTML;
+//         button.addEventListener('click',function(){
+//             const parent = button.parentNode;
+//             const firstChild = parent.firstElementChild;
+//             const name = firstChild.innerHTML;
            
-            // put selected name and set the order list 
+//             // put selected name and set the order list 
 
-            const orderList = document.querySelector('.order-list')
-            const listItem = document.createElement('li')
+//             const orderList = document.querySelector('.order-list')
+//             const listItem = document.createElement('li')
 
-            listItem.innerText=name;
-            orderList.appendChild(listItem);
+//             listItem.innerText=name;
+//             orderList.appendChild(listItem);
         
-        })    
-    };
+//         })    
+//     };
 
+
+    // calculate section
+
+  
 
 
