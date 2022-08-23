@@ -1,43 +1,45 @@
 
+// click the button and put the player name 
+const orderList = document.querySelector('.order-list');
 
-// function getButtonValue(Id){
-//     const tamim =document.getElementById(Id);
-//     const tamimParent = tamim.parentNode.firstElementChild;
-//     const getSelectName = tamimParent.innerText;
-//     console.log(getSelectName);
-// }
-// getButtonValue('tamim-button');
-
-
-// function getPlayerName(){
-
-// }
+function countChild(){
+  const x = orderList.children.length;
+  return x ;
+}
 
 
+const button = document.querySelectorAll('.select-button');
 
-// for(let i = 0; i<10;i++){
-    
-//     const button = document.querySelectorAll('.select-button')[i];
 
-//         button.addEventListener('click',function(){
-//             const parent = button.parentNode;
-//             const firstChild = parent.firstElementChild;
-//             const name = firstChild.innerHTML;
-           
-//             // put selected name and set the order list 
+        for(let i = 0; i<9; i++){
 
-//             const orderList = document.querySelector('.order-list')
-//             const listItem = document.createElement('li')
+            let getAllButton = button[i];
 
-//             listItem.innerText=name;
-//             orderList.appendChild(listItem);
+            getAllButton.addEventListener('click',function(){
+            const parent = this.parentNode;
+            const firstChild = parent.firstElementChild;
+            const getName = firstChild.innerHTML;
+  
+  
+
+          const x = countChild();
+          if( x < 5){
+
+            const listItem = document.createElement('li');
         
-//         })    
-//     };
+            listItem.innerText=getName;
+            orderList.appendChild(listItem);
 
+             //disable selected button 
+             getAllButton.disabled = "disabled";
+             getAllButton.classList.add('disable-button');
 
+          }
 
-
-
-
+          else{
+            alert('You cannot select more than 5 ')
+          }
+                    
+   });
+ }
 
