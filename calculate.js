@@ -11,7 +11,7 @@ function getFieldAmount(fieldId){
 
 }
 
-//get expenses and total amount function
+// total amount value function
 
 function getAmount(AmountId){
     const amountField = document.getElementById(AmountId);
@@ -20,13 +20,14 @@ function getAmount(AmountId){
     return amount;
 }
 
+
 //get total player expenses 
 
 document.getElementById('calculate-btn').addEventListener('click',function(){
-        const x = getFieldAmount('per-player-field');
+        const perPlayerField = getFieldAmount('per-player-field');
         const countElement = countChild();
 
-        const totalPlayerExpenses = x * countElement;
+        const totalPlayerExpenses = perPlayerField * countElement;
 
         document.getElementById('expenses-amount').innerText = totalPlayerExpenses;
 });
@@ -39,6 +40,7 @@ document.getElementById('calculate-btn').addEventListener('click',function(){
         const managerAmount = getFieldAmount('manager-field');
         const coachAmount = getFieldAmount('coach-field');
         const expensesTotalAmount = getAmount('expenses-amount');
+
         const managerCoachTotal = managerAmount + coachAmount;
         const alltotalAmount = managerCoachTotal + expensesTotalAmount;
 
