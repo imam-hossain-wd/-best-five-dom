@@ -127,11 +127,33 @@ h1{
     width:160px;
     height:40px;
 }
+.per-player-style{
+    background-color:#B53471;
+    width:90%;
+    height:45px;
+    margin-left: 50px;
+    border-radius: 5px;
+    font-size: 25px;
+}
 #manager-field{
     margin-left:13px;
 }
 #coach-field{
     margin-left:31px;
+}
+.amount-total{
+    font-size:25px;
+}
+.amount-total label,span{
+    font-size:25px;
+}
+
+.total-style{
+    background-color: #833471;
+    width:85%;
+    height:40px;
+    margin-left: 15px;
+    border-radius: 5px;
 }
 
 
